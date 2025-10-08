@@ -8,6 +8,7 @@
   outputs = { self, nixpkgs, ... } @ inputs:
   {
 	nixosConfigurations.skynet = nixpkgs.lib.nixosSystem {
+	  specialArgs = { inherit inputs; };
 	  modules = [
 	  	./configuration.nix
 	  ];
