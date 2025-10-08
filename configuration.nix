@@ -39,7 +39,7 @@
    enable = true;
    config = {
    	user = {
-		name = "Hari-c137";
+		name = "ClearlyOpaque";
 		email = "hariprasadaji465@gmail.com";
 	};
      };
