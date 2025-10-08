@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports =
@@ -48,7 +48,9 @@
   programs.fish = {
    enable = true;
    shellAliases = {
-    	nrs = "sudo nixos-rebuild switch";
+    	rebuild = "sudo nixos-rebuild switch --flake ~/code/echelon#skynet";
+	gs = "git status";
+	gp = "git push -u origin main";
      };
   };
 
