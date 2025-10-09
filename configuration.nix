@@ -4,6 +4,7 @@
   imports =
     [ 
       ./hardware-configuration.nix
+      ./mods/shell.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -35,24 +36,16 @@
   ];
 
 
-  programs.git = {
-   enable = true;
-   config = {
-   	user = {
-		name = "ClearlyOpaque";
-		email = "hariprasadaji465@gmail.com";
-	};
-     };
-  };
+#  programs.git = {
+#   enable = true;
+#   config = {
+#   	user = {
+#		name = "ClearlyOpaque";
+#		email = "hariprasadaji465@gmail.com";
+#	};
+#     };
+#  };
 
-  programs.fish = {
-   enable = true;
-   shellAliases = {
-    	rebuild = "sudo nixos-rebuild switch --flake ~/code/echelon#skynet";
-	gs = "git status";
-	gp = "git push -u origin main";
-     };
-  };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   boot.kernelPackages = pkgs.linuxPackages_latest;
