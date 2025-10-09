@@ -48,7 +48,8 @@
 
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+# boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_cachyos;
 
   hardware.amdgpu.overdrive.enable = true;
   services.lact = {
@@ -58,6 +59,7 @@
   environment.systemPackages = with pkgs; [
     neovim
     wl-clipboard
+    btop
     walker
     curl
     ripgrep
@@ -72,6 +74,7 @@
   ];
 
   services.displayManager.ly.enable = true;
+
   services.hardware.openrgb.enable = true;
   nixpkgs.config.allowUnfree = true;
 
