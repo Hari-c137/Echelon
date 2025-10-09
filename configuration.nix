@@ -57,6 +57,11 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  hardware.amdgpu.overdrive.enable = true;
+  services.lact = {
+	enable = true;
+  };
+
   environment.systemPackages = with pkgs; [
     neovim
     wl-clipboard
