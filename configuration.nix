@@ -60,8 +60,9 @@
     neovim
     wl-clipboard
     walker
-    discord
     curl
+    ripgrep
+    fd
     du-dust
     swww
     fastfetch
