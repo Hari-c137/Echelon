@@ -4,6 +4,7 @@ let
    aliasfish = {
     	rebuild = "sudo nixos-rebuild switch --flake ~/code/echelon#skynet";
 	gs = "git status";
+	ls = "eza";
 	gp = "git push -u origin main";
    };
 in 
