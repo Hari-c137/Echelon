@@ -65,8 +65,6 @@
     ripgrep
     fd
     bat
-    eza
-    du-dust
     swww
     fastfetch
     kitty
