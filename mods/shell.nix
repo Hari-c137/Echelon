@@ -22,6 +22,10 @@ in
      };
   };
 
+  environment.systemPackages = with pkgs; [
+  	helix
+  ];
+
   programs.fish = {
    enable = true;
    shellAliases = aliasfish;
