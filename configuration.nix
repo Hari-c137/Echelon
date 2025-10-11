@@ -24,6 +24,7 @@
     extraGroups = [ "wheel" ]; 
     packages = with pkgs; [
       tree
+      simulide
     ];
   };
 
@@ -34,17 +35,6 @@
   fonts.packages = with pkgs; [
      nerd-fonts.blex-mono
   ];
-
-
-#  programs.git = {
-#   enable = true;
-#   config = {
-#   	user = {
-#		name = "ClearlyOpaque";
-#		email = "hariprasadaji465@gmail.com";
-#	};
-#     };
-#  };
 
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -64,6 +54,7 @@
     curl
     ripgrep
     fd
+    pwvucontrol
     bat
     swww
     fastfetch
