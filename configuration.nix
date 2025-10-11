@@ -52,6 +52,7 @@
     btop
     walker
     curl
+    yazi
     ripgrep
     fd
     pwvucontrol
