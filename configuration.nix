@@ -13,11 +13,7 @@
   networking.hostName = "skynet"; 
 
   time.timeZone = "Asia/Kolkata";
-
-  services.pipewire = {
-    enable = true;
-    pulse.enable = true;
-  };
+  nixpkgs.config.allowUnfree = true;
 
   users.users.x137 = {
     isNormalUser = true;
@@ -31,6 +27,21 @@
 
   programs.firefox.enable = true;
   programs.niri.enable = true;
+
+  programs.neovim = {
+  	enable = true;
+	defaultEditor = true;
+	package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.default;
+
+  };
+
+  services.displayManager.ly.enable = true;
+  services.hardware.openrgb.enable = true;
+
+  services.pipewire = {
+    enable = true;
+    pulse.enable = true;
+  };
 
   fonts.packages = with pkgs; [
      nerd-fonts.blex-mono
@@ -47,7 +58,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    neovim
     wl-clipboard
     btop
     fuzzel
@@ -63,10 +73,6 @@
     alacritty
   ];
 
-  services.displayManager.ly.enable = true;
-
-  services.hardware.openrgb.enable = true;
-  nixpkgs.config.allowUnfree = true;
 
   system.stateVersion = "25.05";
 
