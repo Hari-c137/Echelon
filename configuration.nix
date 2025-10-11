@@ -36,7 +36,6 @@
   };
 
   services.displayManager.ly.enable = true;
-  services.gvfs.enable = true;
   services.hardware.openrgb.enable = true;
 
 
@@ -62,7 +61,6 @@
   environment.systemPackages = with pkgs; [
     wl-clipboard
     btop
-    nautilus
     fuzzel
     curl
     yazi
