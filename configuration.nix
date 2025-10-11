@@ -50,7 +50,7 @@
     neovim
     wl-clipboard
     btop
-    walker
+    fuzzel
     curl
     yazi
     ripgrep
