@@ -54,6 +54,7 @@ overview {
 }
 
 spawn-at-startup "swww-daemon"
+spawn-at-startup "elephant"
 spawn-at-startup "walker" "--gapplication-service"
 // spawn-at-startup "pipewire"
 
