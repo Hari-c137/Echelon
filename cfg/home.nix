@@ -16,5 +16,6 @@
     ./zen.nix
     ./symlinks.nix
     ./walker.nix
+    ./fzf.nix
   ];
 }
