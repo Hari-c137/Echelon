@@ -1,13 +1,16 @@
-{ config, ... }: {
+{ config, ... }:
+{
 
   xdg.configFile."niri" = {
-    source = config.lib.file.mkOutOfStoreSymlink
-      "/home/x137/code/echelon/symlinks/niri/";
+    source = config.lib.file.mkOutOfStoreSymlink "/home/x137/code/echelon/symlinks/niri/";
+    recursive = true;
+  };
+  xdg.configFile."eww" = {
+    source = config.lib.file.mkOutOfStoreSymlink "/home/x137/code/echelon/symlinks/eww/";
     recursive = true;
   };
   xdg.configFile."nvim" = {
-    source = config.lib.file.mkOutOfStoreSymlink
-      "/home/x137/code/echelon/symlinks/nvim/";
+    source = config.lib.file.mkOutOfStoreSymlink "/home/x137/code/echelon/symlinks/nvim/";
     recursive = true;
   };
 }
