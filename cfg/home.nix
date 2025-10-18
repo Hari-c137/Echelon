@@ -19,7 +19,6 @@
     ./wall.nix
     ./vencord.nix
     ./zen.nix
-    ./eww.nix
     ./symlinks.nix
     ./walker.nix
     ./fzf.nix

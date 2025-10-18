@@ -15,6 +15,7 @@
           rustc
           rustfmt
           clippy
+          openssl
           rust-analyzer
           glib
           gtk4-layer-shell
