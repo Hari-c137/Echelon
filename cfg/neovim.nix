@@ -7,23 +7,31 @@
     viAlias = true;
     vimAlias = true;
     vimdiffAlias = true;
-  plugins = let
-    nvim-treesitter-with-plugins = pkgs.vimPlugins.nvim-treesitter.withPlugins (treesitter-plugins:
-      with treesitter-plugins; [
-        bash
-        c
-        lua
-        nix
-        rust
-      ]);
-  in
-    with pkgs.vimPlugins; [
-      nvim-treesitter-with-plugins
-      gruvbox
-      blink-cmp
-      cord-nvim
-      gitsigns-nvim
-    ];
+    plugins =
+      let
+        nvim-treesitter-with-plugins = pkgs.vimPlugins.nvim-treesitter.withPlugins (
+          treesitter-plugins: with treesitter-plugins; [
+            bash
+            c
+            lua
+            nix
+            rust
+          ]
+        );
+      in
+      with pkgs.vimPlugins;
+      [
+        nvim-treesitter-with-plugins
+        gruvbox
+        conform-nvim
+        blink-cmp
+        cord-nvim
+        gitsigns-nvim
+        vim-wakatime
+      ];
   };
+  home.packages = [
+    pkgs.luajit
+    pkgs.nixfmt
+  ];
 }
-

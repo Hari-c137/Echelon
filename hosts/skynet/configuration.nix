@@ -1,14 +1,25 @@
-{ config, lib, pkgs, inputs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
-  imports = [ ./hardware-configuration.nix ./../../mods/source.nix ];
+  imports = [
+    ./hardware-configuration.nix
+    ./../../mods/source.nix
+  ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking = {
     hostName = "skynet";
-    networkmanager = { enable = true; };
+    networkmanager = {
+      enable = true;
+    };
   };
 
   time.timeZone = "Asia/Kolkata";
@@ -17,7 +28,10 @@
   users.users.x137 = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
-    packages = with pkgs; [ tree simulide ];
+    packages = with pkgs; [
+      tree
+      simulide
+    ];
   };
 
   programs.niri.enable = true;
@@ -35,9 +49,14 @@
   fonts.packages = with pkgs; [ nerd-fonts.blex-mono ];
 
   nix.settings = {
-    extra-substituters =
-      [ "https://walker.cachix.org" "https://walker-git.cachix.org" ];
-    experimental-features = [ "nix-command" "flakes" ];
+    extra-substituters = [
+      "https://walker.cachix.org"
+      "https://walker-git.cachix.org"
+    ];
+    experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
     extra-trusted-public-keys = [
       "walker.cachix.org-1:fG8q+uAaMqhsMxWjwvk0IMb4mFPFLqHjuvfwQxE4oJM="
       "walker-git.cachix.org-1:vmC0ocfPWh0S/vRAQGtChuiZBTAe4wiKDeyyXM0/7pM="
@@ -63,4 +82,3 @@
   system.stateVersion = "25.05";
 
 }
-

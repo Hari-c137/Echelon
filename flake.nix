@@ -28,25 +28,42 @@
     };
   };
 
-  outputs = { self, nixpkgs, chaotic, rust-overlay, neovim-nightly-overlay
-    , home-manager, stylix, zen-browser, walker, ... }@inputs: {
+  outputs =
+    {
+      self,
+      nixpkgs,
+      chaotic,
+      rust-overlay,
+      neovim-nightly-overlay,
+      home-manager,
+      stylix,
+      zen-browser,
+      walker,
+      ...
+    }@inputs:
+    {
       nixosConfigurations.skynet = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         system = "x86_64-linux";
         modules = [
-          ({ pkgs, libs, ... }: {
-            nixpkgs.overlays = [
-              rust-overlay.overlays.default
-              inputs.neovim-nightly-overlay.overlays.default
-            ];
-          })
+          (
+            { pkgs, libs, ... }:
+            {
+              nixpkgs.overlays = [
+                rust-overlay.overlays.default
+                inputs.neovim-nightly-overlay.overlays.default
+              ];
+            }
+          )
           stylix.nixosModules.default
           ./hosts/skynet/configuration.nix
           chaotic.nixosModules.default
-          ({ pkgs, ... }: {
-            environment.systemPackages =
-              [ pkgs.rust-bin.stable.latest.default ];
-          })
+          (
+            { pkgs, ... }:
+            {
+              environment.systemPackages = [ pkgs.rust-bin.stable.latest.default ];
+            }
+          )
           home-manager.nixosModules.home-manager
           {
             home-manager = {
