@@ -9,6 +9,7 @@ require("plugins.cord")
 require("plugins.gitsigns")
 require("plugins.conform")
 require("plugins.neotree")
+require("plugins.treesitter")
 
 -- early_initialization
 vim.g.mapleader = " "

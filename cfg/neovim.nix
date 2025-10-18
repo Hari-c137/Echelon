@@ -25,7 +25,11 @@
         neo-tree-nvim
         oxocarbon-nvim
         conform-nvim
+        gruvbox
         blink-cmp
+        telescope-nvim
+        plenary-nvim
+        mini-nvim
         cord-nvim
         gitsigns-nvim
         vim-wakatime
@@ -34,5 +38,6 @@
   home.packages = [
     pkgs.luajit
     pkgs.nixfmt
+    pkgs.tree-sitter
   ];
 }
