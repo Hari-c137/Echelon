@@ -4,10 +4,11 @@ require("keymaps")
 require("ui")
 
 -- plugins
-require("plugins.blink-cmp")
-require("plugins.cord-nvim")
+require("plugins.blinkcmp")
+require("plugins.cord")
 require("plugins.gitsigns")
 require("plugins.conform")
+require("plugins.neotree")
 
 -- early_initialization
 vim.g.mapleader = " "

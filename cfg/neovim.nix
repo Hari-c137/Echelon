@@ -22,7 +22,8 @@
       with pkgs.vimPlugins;
       [
         nvim-treesitter-with-plugins
-        gruvbox
+        neo-tree-nvim
+        oxocarbon-nvim
         conform-nvim
         blink-cmp
         cord-nvim
