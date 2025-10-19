@@ -19,13 +19,12 @@
           ]
         );
       in
-      with pkgs.vimPlugins;
+      with pkgs.vimPlugins; # todo() use lazy
       [
         nvim-treesitter-with-plugins
         neo-tree-nvim
-        oxocarbon-nvim
         conform-nvim
-        gruvbox
+        miasma-nvim
         blink-cmp
         telescope-nvim
         plenary-nvim

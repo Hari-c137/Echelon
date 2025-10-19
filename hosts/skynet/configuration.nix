@@ -47,6 +47,7 @@
   };
 
   fonts.packages = with pkgs; [ nerd-fonts.blex-mono ];
+  #   stylix.enable = true;
 
   nix.settings = {
     extra-substituters = [
