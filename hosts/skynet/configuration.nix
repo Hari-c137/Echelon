@@ -74,6 +74,7 @@
     rust-analyzer
     curl
     yazi
+    heroic
     ripgrep
     fd
     pwvucontrol
