@@ -1,13 +1,18 @@
-fn bar(time) {
-  return box(#{ orientation: "h" }, [
+fn bar(hour,min) {
+  return box(#{ orientation: "v" }, [
     workspaces(), 
-    sidestuff(time),
+    time(hour, min),
   ]);
 }
 
-fn sidestuff(time) {
-  return box(#{ class: "sidestuff", orientation: "h", space_evenly: false, halign: "end"}, [
-    label(#{ text: time })
+fn system() {
+}
+
+fn time(hour, min) {
+  return box(#{ class: "time", orientation: "v", space_evenly: false}, [
+    label(#{ text: hour }),
+    label(#{ text: "- -" }),
+    label(#{ text: min }),
   ]);
 }
 
@@ -15,7 +20,7 @@ fn workspaces() {
   let buttons = [];
 
   // looping and creating buttons
-  for n in 0..9 {
+  for n in 0..5 {
     buttons.push(
         button(#{ 
             onclick: "niri msg action focus-workspace " + (n + 1), 
@@ -26,31 +31,37 @@ fn workspaces() {
 
   return box(#{
     class: "workspaces",
-    orientation: "h",
-    space_evenly: true,
-    halign: "start",
-    spacing: 10,
+    orientation: "v",
+    space_evenly: false,
+    halign: "center",
+    spacing: 37,
   }, buttons);
 }
 
 enter([
-  poll("time", #{ 
-      interval: "10s", 
-      cmd: "date '+%H:%M %b %d, %Y'",
+  poll("hour", #{ 
+      interval: "55m", 
+      cmd: "date '+%H'",
+      initial: "" 
+  }),
+  poll("min", #{ 
+      interval: "55s", 
+      cmd: "date '+%M'",
       initial: "" 
   }),
 
   defwindow("bar", #{
       monitor: 0,
       windowtype: "dock",
-      exclusive: true,
+      stacking: "fg",
       geometry: #{
-          x: "0%",
-          y: "0%",
-          width: "100%",
-          height: "10px",
-          anchor: "top center",
+          x: "5",
+          y: "0",
+          width: "3%",
+          height: "98%",
+          anchor: "center left",
       },
+      exclusive: true,
       reserve: #{ side: "top", distance: "4%" }
-  }, bar(time)),
+  }, bar(hour, min)),
 ]);
