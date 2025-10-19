@@ -64,6 +64,7 @@
     ];
   };
   environment.systemPackages = with pkgs; [
+    (lib.hiPrio pkgs.uutils-coreutils-noprefix) # what could go wrong..?
     wl-clipboard
     btop
     gcc
