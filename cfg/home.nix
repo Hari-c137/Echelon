@@ -22,5 +22,7 @@
     ./symlinks.nix
     ./walker.nix
     ./fzf.nix
+    ./mpv.nix
   ];
+
 }

@@ -76,6 +76,7 @@ environment {
     _JAVA_AWT_WM_NONREPARENTING "1"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     QT_QPA_PLATFORMTHEME "qt6ct"
+    RADV_PERFTEST "video_decode"
     //nv GSK_RENDERER "ngl"
     //nv NVD_BACKEND "direct"
     //nv __GL_VRR_ALLOWED "1"
