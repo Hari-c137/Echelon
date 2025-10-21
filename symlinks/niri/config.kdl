@@ -114,7 +114,8 @@ window-rule {
 
 binds {
     Mod+E           { spawn "kitty" "--start-as=fullscreen" "--session=devshell"; }
-    Mod+D           { spawn "walker";     }
+ //   Mod+D           { spawn "walker";     }
+    Mod+D           { spawn "fuzzel";     }
     Mod+Return      { spawn "kitty"; }
     Mod+Shift+B   { spawn "~/.config/niri/scripts/copy_key.sh"; }
     Mod+Shift+W   { spawn "~/.config/niri/scripts/swwwRand.sh"; }

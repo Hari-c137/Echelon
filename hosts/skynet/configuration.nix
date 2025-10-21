@@ -88,6 +88,7 @@
     gcc
     nautilus
     wget
+    fuzzel
     gnumake
     unzip
     rust-analyzer
