@@ -23,7 +23,9 @@
     ./walker.nix
     ./fzf.nix
     ./btm.nix
+    ./fish.nix
     ./mpv.nix
+    ./nushell.nix
   ];
 
 }
