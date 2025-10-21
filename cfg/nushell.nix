@@ -5,7 +5,7 @@
     enable = true;
     shellAliases = {
       gs = "git status";
-      gf = "git diff";
+      gd = "git diff";
       gp = "git push -u origin main";
       x = "exit";
       v = "nvim";
