@@ -51,6 +51,9 @@
   };
 
   security.polkit.enable = true;
+  security.sudo-rs = {
+    enable = true;
+  };
   programs.niri.enable = true;
   programs.lazygit.enable = true;
 
