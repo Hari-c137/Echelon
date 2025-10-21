@@ -20,7 +20,7 @@
     ./vencord.nix
     ./zen.nix
     ./symlinks.nix
-    #   ./walker.nix
+    ./helix.nix
     ./fzf.nix
     ./btm.nix
     ./fish.nix
