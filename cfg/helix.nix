@@ -5,7 +5,7 @@
     enable = true;
     defaultEditor = false;
     settings = {
-      theme = "gruvbox-darker";
+      theme = "gruvbox";
       editor = {
         line-number = "relative";
       };
