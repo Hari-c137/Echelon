@@ -21,6 +21,7 @@
     ./zen.nix
     ./symlinks.nix
     ./helix.nix
+    ./zed.nix
     ./fzf.nix
     ./btm.nix
     ./fish.nix
