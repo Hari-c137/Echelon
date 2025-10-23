@@ -1,0 +1,14 @@
+[package]
+name = "sway_tiler-rs"
+version = "0.1.3"
+authors = ["ClearlyOpaque <hariprasadaji465@gmail.com>"]
+description = "Autotiling for sway"
+edition = "2018"
+
+[dependencies]
+swayipc = "3.0"
+
+[dependencies.clap]
+version = "3.0"
+default-features = false
+features = ["std", "derive"]
