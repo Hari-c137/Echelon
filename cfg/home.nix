@@ -13,20 +13,14 @@
   programs.home-manager.enable = true;
 
   imports = [
-    ./bash.nix
+    ./editors/editors.nix
+    ./shells/shells.nix
+    ./programs/programs.nix
+    ./cli/cli.nix
     ./kitty.nix
-    ./neovim.nix
     ./wall.nix
-    ./vencord.nix
-    ./zen.nix
     ./symlinks.nix
-    ./helix.nix
-    ./zed.nix
-    ./fzf.nix
-    ./btm.nix
-    ./fish.nix
     ./mpv.nix
-    ./nushell.nix
   ];
 
 }
