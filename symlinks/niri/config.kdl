@@ -118,7 +118,7 @@ binds {
     Mod+D           { spawn "fuzzel";     }
     Mod+Return      { spawn "kitty"; }
     Mod+Shift+B   { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
-    Mod+Shift+W   { spawn "~/.config/niri/scripts/swwwRand.sh"; }
+    Mod+Shift+W   { spawn "~/.config/niri/scripts/wallset.nu"; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
