@@ -5,7 +5,7 @@
     enable = true;
     package = pkgs.kitty;
     settings = {
-      shell = "nu";
+      shell = "fish";
       editor = "nvim";
     };
     font = {
