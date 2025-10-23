@@ -5,7 +5,7 @@
 # Header: swwwRand.sh
 # Desc:   random wallpaper switcher for sway
 
-WALLPAPER_DIR="${1:-$HOME/pics/}"
+WALLPAPER_DIR="${1:-$HOME/code/echelon/walls/}"
 effects=("grow" "wave")
 random_index=$((RANDOM % ${#effects[@]}))
 RANDOM_WALLPAPER=$(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.webp" -o -iname "*.gif" -o -iname "*.jpeg" -o -iname "*.bmp" \) | shuf -n 1)
