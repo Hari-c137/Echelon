@@ -54,8 +54,6 @@ overview {
 }
 
 spawn-at-startup "swww-daemon"
-spawn-at-startup "elephant"
-spawn-at-startup "walker" "--gapplication-service"
 // spawn-at-startup "pipewire"
 
 environment {
@@ -114,8 +112,7 @@ window-rule {
 
 binds {
     Mod+E           { spawn "kitty" "--start-as=fullscreen" "--session=devshell"; }
- //   Mod+D           { spawn "walker";     }
-    Mod+D           { spawn "fuzzel";     }
+    Mod+D           { spawn "vicinae" "toggle";     }
     Mod+Return      { spawn "kitty"; }
     Mod+Shift+B   { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
     Mod+Shift+W   { spawn "~/.config/niri/scripts/wallset.nu"; }

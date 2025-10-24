@@ -22,6 +22,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     elephant.url = "github:abenz1267/elephant";
+    vicinae.url = "github:vicinaehq/vicinae";
     walker = {
       url = "github:abenz1267/walker";
       inputs.elephant.follows = "elephant";
@@ -36,6 +37,7 @@
       rust-overlay,
       neovim-nightly-overlay,
       home-manager,
+      vicinae,
       stylix,
       zen-browser,
       walker,
@@ -75,6 +77,9 @@
                 inherit inputs;
                 system = "x86_64-linux";
               };
+              sharedModules = [
+                vicinae.homeManagerModules.default
+              ];
             };
           }
         ];

@@ -18,6 +18,7 @@
     ./programs/programs.nix
     ./cli/cli.nix
     ./kitty.nix
+    ./vicinae.nix
     ./wall.nix
     ./symlinks.nix
     ./mpv.nix
