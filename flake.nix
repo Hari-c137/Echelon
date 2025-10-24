@@ -21,12 +21,7 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    elephant.url = "github:abenz1267/elephant";
     vicinae.url = "github:vicinaehq/vicinae";
-    walker = {
-      url = "github:abenz1267/walker";
-      inputs.elephant.follows = "elephant";
-    };
   };
 
   outputs =
@@ -40,7 +35,6 @@
       vicinae,
       stylix,
       zen-browser,
-      walker,
       ...
     }@inputs:
     {
@@ -77,9 +71,6 @@
                 inherit inputs;
                 system = "x86_64-linux";
               };
-              sharedModules = [
-                vicinae.homeManagerModules.default
-              ];
             };
           }
         ];
