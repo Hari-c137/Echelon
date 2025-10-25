@@ -576,11 +576,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1761401937,
-        "narHash": "sha256-qc3X7FLKEKTNr/g/ru4y03XCrfsvPps9GIF5vuiKuJA=",
+        "lastModified": 1761403583,
+        "narHash": "sha256-8A+jOwnPMxYKqZdrWvmfgNGhHTHB71MY+hBVzmtOWug=",
         "owner": "vicinaehq",
         "repo": "vicinae",
-        "rev": "fd0f43c583b31117380ed22b457595a188d4b1ab",
+        "rev": "4a5bf6fe7a573a9170580d85e4c057adc9251caf",
         "type": "github"
       },
       "original": {

@@ -12,8 +12,7 @@
         nvim-treesitter-with-plugins = pkgs.vimPlugins.nvim-treesitter.withPlugins (
           treesitter-plugins: with treesitter-plugins; [
             bash
-            tree-sitter-norg
-            tree-sitter-norg-meta
+            nu
             c
             lua
             nix
@@ -25,9 +24,7 @@
       [
         nvim-treesitter-with-plugins
         neo-tree-nvim
-        neorg
         conform-nvim
-        miasma-nvim
         blink-cmp
         telescope-nvim
         plenary-nvim
