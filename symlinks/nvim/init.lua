@@ -8,7 +8,6 @@ require("plugins.blinkcmp")
 require("plugins.cord")
 require("plugins.gitsigns")
 require("plugins.conform")
-require("plugins.neorg")
 require("plugins.neotree")
 require("plugins.treesitter")
 
