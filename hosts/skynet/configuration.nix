@@ -57,7 +57,7 @@
   programs.niri.enable = true;
   programs.lazygit.enable = true;
 
-  services.displayManager.ly.enable = true;
+  #   services.displayManager.ly.enable = true;
 
   services.hardware.openrgb = {
     enable = true;

@@ -22,6 +22,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     vicinae.url = "github:vicinaehq/vicinae";
+    cosmic-ext-extra-sessions = {
+      url = "github:KiaraGrouwstra/cosmic-ext-extra-sessions?ref=niri-screen-share";
+      flake = false;
+    };
   };
 
   outputs =
@@ -32,6 +36,7 @@
       rust-overlay,
       neovim-nightly-overlay,
       home-manager,
+      cosmic-ext-extra-sessions,
       vicinae,
       stylix,
       zen-browser,

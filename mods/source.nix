@@ -8,6 +8,7 @@
     ./audio.nix
     ./dev.nix
     ./scripts.nix
+    ./cosmic.nix
   ];
 
 }

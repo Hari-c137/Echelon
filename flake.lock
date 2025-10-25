@@ -91,6 +91,23 @@
         "type": "github"
       }
     },
+    "cosmic-ext-extra-sessions": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1745756239,
+        "narHash": "sha256-JlQ2Rm8zRksz0Vk2xnZSuGvSnvlEK+LUbRBJk0DJpGg=",
+        "owner": "KiaraGrouwstra",
+        "repo": "cosmic-ext-extra-sessions",
+        "rev": "5f088d2e51ea62ae60ec64e3adc211a365d8ccc2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "KiaraGrouwstra",
+        "ref": "niri-screen-share",
+        "repo": "cosmic-ext-extra-sessions",
+        "type": "github"
+      }
+    },
     "firefox-gnome-theme": {
       "flake": false,
       "locked": {
@@ -555,6 +572,7 @@
     "root": {
       "inputs": {
         "chaotic": "chaotic",
+        "cosmic-ext-extra-sessions": "cosmic-ext-extra-sessions",
         "home-manager": "home-manager_2",
         "neovim-nightly-overlay": "neovim-nightly-overlay",
         "nixpkgs": "nixpkgs_3",
