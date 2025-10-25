@@ -23,6 +23,7 @@
       [
         nvim-treesitter-with-plugins
         neo-tree-nvim
+        neorg
         conform-nvim
         miasma-nvim
         blink-cmp
