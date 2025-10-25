@@ -13,15 +13,15 @@
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    stylix = {
-      url = "github:nix-community/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     vicinae.url = "github:vicinaehq/vicinae";
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     cosmic-ext-extra-sessions = {
       url = "github:KiaraGrouwstra/cosmic-ext-extra-sessions?ref=niri-screen-share";
       flake = false;
@@ -38,7 +38,6 @@
       home-manager,
       cosmic-ext-extra-sessions,
       vicinae,
-      stylix,
       zen-browser,
       ...
     }@inputs:
@@ -52,11 +51,11 @@
             {
               nixpkgs.overlays = [
                 rust-overlay.overlays.default
+                inputs.niri.overlays.niri
                 inputs.neovim-nightly-overlay.overlays.default
               ];
             }
           )
-          stylix.nixosModules.default
           ./hosts/skynet/configuration.nix
           chaotic.nixosModules.default
           (

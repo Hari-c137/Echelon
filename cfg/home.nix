@@ -20,6 +20,7 @@
     ./kitty.nix
     ./vicinae.nix
     ./wall.nix
+    ./niri.nix
     ./symlinks.nix
     ./mpv.nix
   ];
