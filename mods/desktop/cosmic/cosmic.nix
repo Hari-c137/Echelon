@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  #  imports = [ ./start-cosmic-ext-niri.nix ];
+  imports = [ ./start-cosmic-ext-niri.nix ];
   environment = {
     variables.NIXOS_OZONE_WL = "1";
     sessionVariables.COSMIC_DATA_CONTROL_ENABLED = 1;
