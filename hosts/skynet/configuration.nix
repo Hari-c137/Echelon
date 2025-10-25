@@ -57,8 +57,6 @@
   programs.niri.enable = true;
   programs.lazygit.enable = true;
 
-  #   services.displayManager.ly.enable = true;
-
   services.hardware.openrgb = {
     enable = true;
     motherboard = "intel";
@@ -67,7 +65,6 @@
   };
 
   fonts.packages = with pkgs; [ nerd-fonts.blex-mono ];
-  #   stylix.enable = true;
 
   nix.settings = {
     extra-substituters = [
