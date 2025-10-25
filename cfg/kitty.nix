@@ -8,10 +8,10 @@
       shell = "fish";
       editor = "nvim";
     };
-    #    font = {
-    #      name = "BlexMono";
-    #      size = 11.5;
-    #    };
+    font = {
+      name = "BlexMono";
+      size = 11.5;
+    };
     enableGitIntegration = true;
     shellIntegration.enableFishIntegration = true;
     settings = {
