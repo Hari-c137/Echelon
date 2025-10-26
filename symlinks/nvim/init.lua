@@ -40,7 +40,7 @@ function _G.toggle_floating_terminal()
 			border = "rounded",
 		})
 
-		vim.api.nvim_command("term") -- Open terminal in the buffer
+		vim.api.nvim_command("term fish") -- Open terminal in the buffer
 		vim.cmd("startinsert") -- Start in insert mode
 	end
 end
