@@ -1,25 +1,16 @@
+import "api::linux" as linux;
+import "std::command" as cmd;
+
 fn bar(hour,min) {
   return box(#{ orientation: "v" }, [
     workspaces(), 
     time(hour, min),
-  ]);
-}
-
-fn system() {
-}
-
-fn time(hour, min) {
-  return box(#{ class: "time", orientation: "v", space_evenly: false}, [
-    label(#{ text: hour }),
-    label(#{ text: "- -" }),
-    label(#{ text: min }),
+    system(),
   ]);
 }
 
 fn workspaces() {
   let buttons = [];
-
-  // looping and creating buttons
   for n in 0..5 {
     buttons.push(
         button(#{ 
@@ -38,6 +29,19 @@ fn workspaces() {
   }, buttons);
 }
 
+
+fn time(hour, min) {
+  return box(#{ class: "time", orientation: "v", space_evenly: false}, [
+    label(#{ text: hour }),
+    label(#{ text: "- -" }),
+    label(#{ text: min }),
+  ]);
+}
+
+fn system() {
+}
+
+
 enter([
   poll("hour", #{ 
       interval: "55m", 
@@ -55,13 +59,12 @@ enter([
       windowtype: "dock",
       stacking: "fg",
       geometry: #{
-          x: "5",
+          x: "8",
           y: "0",
-          width: "3%",
+          width: "1",
           height: "98%",
           anchor: "center left",
       },
       exclusive: true,
-      reserve: #{ side: "top", distance: "4%" }
   }, bar(hour, min)),
 ]);

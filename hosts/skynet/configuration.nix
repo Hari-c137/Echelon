@@ -34,6 +34,8 @@
     ];
   };
 
+  systemd.user.targets.cosmic-session.enable = false;
+
   systemd = {
     user.services.polkit-gnome-authentication-agent-1 = {
       description = "polkit-gnome-authentication-agent-1";
