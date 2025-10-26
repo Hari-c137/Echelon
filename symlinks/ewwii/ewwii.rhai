@@ -1,12 +1,32 @@
 import "api::linux" as linux;
 import "std::command" as cmd;
 
-fn bar(hour,min) {
+// pass cpufreq, mem
+let k = linux::get_gpu_info();
+let kk = k[0].memory_kb;
+
+
+fn bar(hour,min, memused, cpufreq, kk) {
   return box(#{ orientation: "v" }, [
     workspaces(), 
-    time(hour, min),
-    system(),
+    mid(hour, min),
+    btm(memused, cpufreq, kk),
   ]);
+}
+
+fn btm(memused, cpufreq, kk) {
+
+    return box(#{ 
+    class: "btm",
+    orientation: "v",
+    space_evenly: false,
+    valign: "end",
+    spacing: 10,
+    }, [    
+    label(#{ text: memused }),
+    label(#{ text: cpufreq }),
+ //   label(#{ text: kk.to_string() }),
+    ]);
 }
 
 fn workspaces() {
@@ -30,17 +50,16 @@ fn workspaces() {
 }
 
 
-fn time(hour, min) {
-  return box(#{ class: "time", orientation: "v", space_evenly: false}, [
+fn mid(hour, min) {
+  return box(#{ class: "mid",
+                orientation: "v",
+                valign: "center",
+                space_evenly: false}, [
     label(#{ text: hour }),
     label(#{ text: "- -" }),
     label(#{ text: min }),
   ]);
 }
-
-fn system() {
-}
-
 
 enter([
   poll("hour", #{ 
@@ -51,6 +70,16 @@ enter([
   poll("min", #{ 
       interval: "55s", 
       cmd: "date '+%M'",
+      initial: "" 
+  }),
+  poll("memused", #{ 
+      interval: "30s", 
+      cmd: "free -h --mega | awk '/Mem:/ {print $3}'",
+      initial: "" 
+  }),
+  poll("cpufreq", #{ 
+      interval: "10s", 
+      cmd: "free -h --mega | awk '/Mem:/ {print $3}'",
       initial: "" 
   }),
 
@@ -66,5 +95,15 @@ enter([
           anchor: "center left",
       },
       exclusive: true,
-  }, bar(hour, min)),
+  }, bar(hour, min, memused, cpufreq, kk)),
 ]);
+
+
+// todo() {
+//  
+//  niri-workspace() [x]
+//  time [x]
+//  ram[]
+//  cpu[]
+//  wifi[]
+// }
