@@ -7,5 +7,6 @@
     ./bat.nix
     ./fd.nix
     ./ripgrep.nix
+    ./yazi.nix
   ];
 }

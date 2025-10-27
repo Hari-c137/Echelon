@@ -6,9 +6,9 @@
     package = pkgs.yazi;
     plugins = { };
 
-    enableBashIntregration = true;
-    enableFishIntregration = true;
-    enableNushellIntregration = true;
+    enableBashIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
 
     settings = {
       log = {
