@@ -6,6 +6,7 @@ let
     up = "sudo nixos-rebuild switch --flake ~/code/echelon#skynet --upgrade";
     re = "sudo nixos-rebuild switch --flake ~/code/echelon#skynet";
     gp = "git push -u origin main";
+    nvim = "hx"; # yeah... old habits die hard
   };
 
 in
