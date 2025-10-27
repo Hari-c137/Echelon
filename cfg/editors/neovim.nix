@@ -26,6 +26,7 @@
         neo-tree-nvim
         conform-nvim
         blink-cmp
+        miasma-nvim
         telescope-nvim
         plenary-nvim
         mini-nvim

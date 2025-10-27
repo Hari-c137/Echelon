@@ -555,11 +555,19 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
+<<<<<<< HEAD
         "lastModified": 1761519336,
         "narHash": "sha256-v1VKJEUre771zhAzZIXq7eC94XjloO4V1JKiBft1ekE=",
         "owner": "vicinaehq",
         "repo": "vicinae",
         "rev": "294db4f06e26c0088cec52dd8cace359c70fcd02",
+=======
+        "lastModified": 1761510479,
+        "narHash": "sha256-HkNjHbD3U2TBpFx1Mry00EBjyv9OaYMZrrWiKkYX8BQ=",
+        "owner": "vicinaehq",
+        "repo": "vicinae",
+        "rev": "73bc51b944203ce06ddd988f6c97c8dd96dc4271",
+>>>>>>> 0fd75ed (wezterm configuration)
         "type": "github"
       },
       "original": {
