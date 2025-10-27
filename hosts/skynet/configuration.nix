@@ -99,7 +99,6 @@
     curl
     yazi
     heroic
-    ripgrep
     pwvucontrol
     fastfetch
   ];

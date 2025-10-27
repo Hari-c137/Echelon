@@ -6,5 +6,6 @@
     ./fzf.nix
     ./bat.nix
     ./fd.nix
+    ./ripgrep.nix
   ];
 }
