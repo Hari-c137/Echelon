@@ -93,7 +93,6 @@
     gcc
     nautilus
     wget
-    fuzzel
     gnumake
     unzip
     rust-analyzer
@@ -101,9 +100,7 @@
     yazi
     heroic
     ripgrep
-    fd
     pwvucontrol
-    bat
     fastfetch
   ];
 
