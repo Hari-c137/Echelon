@@ -97,7 +97,6 @@
     unzip
     rust-analyzer
     curl
-    yazi
     heroic
     pwvucontrol
     fastfetch
