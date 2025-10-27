@@ -12,8 +12,19 @@
       };
       editor = {
         line-number = "relative";
+        mouse = false;
+        auto-completion = true;
+        auto-save = true;
+        auto-format = true;
+
+        lsp = {
+          enable = true;
+          auto-signature-help = true;
+          display-messages = true;
+        };
       };
     };
+
     languages.language = [
       {
         name = "nix";
