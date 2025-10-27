@@ -11,6 +11,7 @@ config.colors = {
 	cursor_bg = "white",
 }
 
+config.default_prog = { 'fish', '-l' }
 config.webgpu_preferred_adapter = {
 	backend = "Vulkan",
 	device = 29824,

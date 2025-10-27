@@ -1,19 +1,25 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   programs.helix = {
     enable = true;
-    defaultEditor = false;
     settings = {
-      theme = "gruvbox";
+      theme = "dark-synthwave";
+      editor.cursor-shape = {
+        normal = "block";
+        insert = "bar";
+        select = "underline";
+      };
       editor = {
         line-number = "relative";
       };
-      keys.normal = {
-        space.space = "file_picker";
-        space.w = ":w";
-        space.q = ":q";
-      };
     };
+    languages.language = [
+      {
+        name = "nix";
+        auto-format = true;
+        formatter.command = "${pkgs.nixfmt}/bin/nixfmt";
+      }
+    ];
   };
 }
