@@ -66,7 +66,10 @@
     startupProfile = "norgb.orp";
   };
 
-  fonts.packages = with pkgs; [ nerd-fonts.blex-mono ];
+  fonts.packages = with pkgs; [
+    nerd-fonts.blex-mono
+    nerd-fonts.iosevka
+  ];
 
   nix.settings = {
     extra-substituters = [
