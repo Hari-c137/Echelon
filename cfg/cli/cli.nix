@@ -8,5 +8,6 @@
     ./fd.nix
     ./ripgrep.nix
     ./yazi.nix
+    ./zoxide.nix
   ];
 }

@@ -8,6 +8,7 @@
     ./qbit.nix
     ./audio.nix
     ./dev.nix
+    ./nh.nix
     ./scripts.nix
   ];
 
