@@ -23,11 +23,25 @@ config.webgpu_preferred_adapter = {
 }
 config.default_cursor_style = 'BlinkingBar'
 config.enable_kitty_graphics = true
-config.front_end = "WebGpu"
+-- config.front_end = "WebGpu"
 config.webgpu_power_preference = "HighPerformance"
-config.animation_fps = 60
-config.max_fps = 120
+config.animation_fps = 137
+config.max_fps = 137
 config.enable_wayland = true
+
+config.keys = {
+  {
+    key = 'n',
+    mods = 'SHIFT|CTRL',
+    action = wezterm.action.ToggleFullScreen,
+  },
+}
+
+wezterm.on('gui-startup', function(cmd)
+  local tab, pane, window = mux.spawn_window(cmd or {})
+  local gui_window = window:gui_window();
+  gui_window:perform_action(wezterm.action.ToggleFullScreen, pane)
+end)
 
 config.window_decorations = "NONE"
 config.hide_tab_bar_if_only_one_tab = true
