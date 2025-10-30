@@ -11,8 +11,8 @@
     recursive = true;
   };
 
-  xdg.configFile."wezterm" = {
-    source = config.lib.file.mkOutOfStoreSymlink "/home/x137/code/echelon/symlinks/wezterm/";
+  xdg.configFile."doom" = {
+    source = config.lib.file.mkOutOfStoreSymlink "/home/x137/code/echelon/symlinks/doom/";
     recursive = true;
   };
 
