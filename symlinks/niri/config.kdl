@@ -70,8 +70,8 @@ environment {
     EGL_PLATFORM "wayland"
     DISPLAY ":0"
     CLUTTER_BACKEND "wayland"
-    TERM "wezterm"
-    TERMINAL "wezterm"
+    TERM "kitty"
+    TERMINAL "kitty"
     _JAVA_AWT_WM_NONREPARENTING "1"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     QT_QPA_PLATFORMTHEME "qt6ct"
@@ -114,7 +114,7 @@ window-rule {
 binds {
   //  Mod+E           { spawn "kitty" "--start-as=fullscreen" "--session=devshell"; }
     Mod+D           { spawn "vicinae" "toggle";     }
-    Mod+Return      { spawn "wezterm"; }
+    Mod+Return      { spawn "kitty"; }
     Mod+Shift+B   { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
     Mod+Shift+W   { spawn "~/.config/niri/scripts/wallset.nu"; }
 

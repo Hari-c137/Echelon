@@ -65,7 +65,9 @@
           (
             { pkgs, ... }:
             {
-              environment.systemPackages = [ pkgs.rust-bin.stable.latest.default ];
+              environment.systemPackages = [
+                pkgs.rust-bin.stable.latest.default
+              ];
             }
           )
           home-manager.nixosModules.home-manager
