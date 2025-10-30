@@ -54,8 +54,6 @@ overview {
 }
 
 spawn-at-startup "swww-daemon"
-spawn-at-startup "cosmic-ext-alternative-startup"
-// spawn-at-startup "pipewire"
 
 environment {
     LD_PRELOAD ""

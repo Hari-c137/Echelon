@@ -9,7 +9,6 @@
       rust-overlay,
       neovim-nightly-overlay,
       home-manager,
-      cosmic-ext-extra-sessions,
       vicinae,
       zen-browser,
       ...
@@ -60,10 +59,6 @@
     nixpkgs.url = "nixpkgs/nixos-unstable";
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
-    wezterm = {
-      url = "github:wezterm/wezterm?dir=nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -80,10 +75,6 @@
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-    cosmic-ext-extra-sessions = {
-      url = "github:KiaraGrouwstra/cosmic-ext-extra-sessions?ref=niri-screen-share";
-      flake = false;
     };
   };
 }
