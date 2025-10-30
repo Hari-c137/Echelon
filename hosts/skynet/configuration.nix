@@ -36,6 +36,7 @@
 
   #  systemd.user.targets.cosmic-session.enable = false;
   services.displayManager.cosmic-greeter.enable = true;
+  services.emacs.enable = true;
 
   systemd = {
     user.services.polkit-gnome-authentication-agent-1 = {
@@ -68,7 +69,6 @@
   };
 
   fonts.packages = with pkgs; [
-    nerd-fonts.blex-mono
     nerd-fonts.iosevka
   ];
 
