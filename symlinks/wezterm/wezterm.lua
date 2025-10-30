@@ -23,7 +23,7 @@ config.webgpu_preferred_adapter = {
 }
 config.default_cursor_style = 'BlinkingBar'
 config.enable_kitty_graphics = true
--- config.front_end = "WebGpu"
+config.front_end = "WebGpu"
 config.webgpu_power_preference = "HighPerformance"
 config.animation_fps = 137
 config.max_fps = 137
