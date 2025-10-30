@@ -30,7 +30,7 @@
         telescope-nvim
         plenary-nvim
         mini-nvim
-        #   cord-nvim
+        cord-nvim
         gitsigns-nvim
         vim-wakatime
       ];

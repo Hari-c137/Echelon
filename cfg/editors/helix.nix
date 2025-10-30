@@ -4,7 +4,7 @@
   programs.helix = {
     enable = true; # change theme, set line higlight and bracket
     settings = {
-      theme = "dark-synthwave";
+      theme = "papercolor-dark";
       editor.cursor-shape = {
         normal = "block";
         insert = "bar";
