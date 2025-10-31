@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -6,5 +6,8 @@
     ./nushell.nix
     ./bash.nix
     ./ion.nix
+  ];
+  home.packages = with pkgs; [
+    shellcheck
   ];
 }

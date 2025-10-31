@@ -75,7 +75,6 @@
   nix.settings = {
     extra-substituters = [
       "https://vicinae.cachix.org"
-      "https://wezterm.cachix.org"
     ];
     experimental-features = [
       "nix-command"
@@ -83,7 +82,6 @@
     ];
     extra-trusted-public-keys = [
       "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
-      "wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="
     ];
   };
   environment.systemPackages = with pkgs; [
