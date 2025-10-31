@@ -110,9 +110,11 @@ window-rule {
 // workspace "game"
 
 binds {
-  //  Mod+E           { spawn "kitty" "--start-as=fullscreen" "--session=devshell"; }
-    Mod+D           { spawn "vicinae" "toggle";     }
-    Mod+Return      { spawn "kitty"; }
+    Mod+E           { spawn "emacsclient" "-nc"; }
+    Mod+D           { spawn "vicinae" "toggle";  }
+    Mod+F           { spawn "zen"; }
+
+    Mod+Return      { spawn "kitty" "--start-as" "fullscreen"; }
     Mod+Shift+B   { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
     Mod+Shift+W   { spawn "~/.config/niri/scripts/wallset.nu"; }
 
@@ -217,7 +219,7 @@ binds {
     Mod+R { switch-preset-column-width; }
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
-    Mod+F { maximize-column; }
+  //  Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
     // Mod+Shift+F { spawn "nemo"; }
     Mod+C { center-column; }
