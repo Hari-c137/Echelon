@@ -33,6 +33,10 @@
       simulide
     ];
   };
+  users.users.c137 = {
+    isNormalUser = true;
+    extraGroups = [ "wheel" ];
+  };
 
   #  systemd.user.targets.cosmic-session.enable = false;
   services.displayManager.cosmic-greeter.enable = true;
