@@ -2,7 +2,7 @@
 
 {
   programs.helix = {
-    enable = true; # change theme, set line higlight and bracket
+    enable = false; # change theme, set line higlight and bracket
     settings = {
       theme = "papercolor-dark";
       editor.cursor-shape = {
