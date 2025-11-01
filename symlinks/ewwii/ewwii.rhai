@@ -5,7 +5,6 @@ import "std::command" as cmd;
 let k = linux::get_gpu_info();
 let kk = k[0].memory_kb;
 
-
 fn bar(hour,min, memused, cpufreq, kk) {
   return box(#{ orientation: "v" }, [
     workspaces(), 
