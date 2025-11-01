@@ -29,8 +29,6 @@
         miasma-nvim
         telescope-nvim
         plenary-nvim
-        mini-nvim
-        cord-nvim
         gitsigns-nvim
         vim-wakatime
       ];
