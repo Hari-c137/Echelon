@@ -4,7 +4,7 @@
   programs.kitty = {
     enable = true;
     package = pkgs.kitty;
-    themeFile = "PaperColor_dark";
+    themeFile = "ayu";
     settings = {
       shell = "fish";
       editor = "nvim";

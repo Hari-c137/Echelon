@@ -59,7 +59,7 @@
     enable = true;
   };
 
-programs.niri.enable = true;
+  programs.niri.enable = true;
 
   services.hardware.openrgb = {
     enable = true;
@@ -93,7 +93,6 @@ programs.niri.enable = true;
     nautilus
     wget
     gnumake
-    raylib
     cmake
     fuzzel
     evil-helix
