@@ -9,5 +9,6 @@
     ./ripgrep.nix
     ./yazi.nix
     ./zoxide.nix
+    ./diff.nix
   ];
 }
