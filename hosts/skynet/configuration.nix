@@ -58,8 +58,8 @@
   security.sudo-rs = {
     enable = true;
   };
-  programs.niri.enable = true;
-  programs.lazygit.enable = true;
+
+programs.niri.enable = true;
 
   services.hardware.openrgb = {
     enable = true;
@@ -93,6 +93,10 @@
     nautilus
     wget
     gnumake
+    raylib
+    cmake
+    fuzzel
+    evil-helix
     unzip
     rust-analyzer
     curl
