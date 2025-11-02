@@ -27,7 +27,7 @@
 
   users.users.x137 = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel" "libvirtd" ];
     packages = with pkgs; [
       tree
       vicinae

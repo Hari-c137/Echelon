@@ -10,6 +10,7 @@
     ./dev.nix
     ./nh.nix
     ./scripts.nix
+    ./virtualization.nix
   ];
 
 }

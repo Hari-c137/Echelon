@@ -22,6 +22,7 @@
     ./niri.nix
     ./symlinks.nix
     ./mpv.nix
+    ./virtualization.nix
   ];
 
 }
