@@ -4,7 +4,7 @@
 
   imports = [ inputs.vicinae.homeManagerModules.default ];
   services.vicinae = {
-    enable = false;
+    enable = true;
     autoStart = true;
     settings = {
       faviconService = "twenty"; # twenty | google | none

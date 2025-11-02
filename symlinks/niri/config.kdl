@@ -111,8 +111,7 @@ window-rule {
 
 binds {
     Mod+E           { spawn "emacsclient" "-nc"; }
-  //  Mod+D           { spawn "vicinae" "toggle";  }
-    Mod+D           { spawn "fuzzel";  }
+    Mod+D           { spawn "vicinae" "toggle";  }
     Mod+F           { spawn "zen"; }
 
     Mod+Return      { spawn "kitty" "--start-as" "fullscreen"; }
