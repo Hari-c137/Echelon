@@ -111,7 +111,7 @@ window-rule {
 // workspace "game"
 
 binds {
-    Mod+E           { spawn "emacsclient" "-nc"; }
+    Mod+E           { spawn "emacs"; }
     Mod+D           { spawn "vicinae" "toggle";  }
     Mod+F           { spawn "zen"; }
 
