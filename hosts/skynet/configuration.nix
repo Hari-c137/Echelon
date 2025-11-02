@@ -30,6 +30,7 @@
     extraGroups = [ "wheel" ];
     packages = with pkgs; [
       tree
+      vicinae
       simulide
     ];
   };

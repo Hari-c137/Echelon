@@ -9,7 +9,6 @@
       rust-overlay,
       neovim-nightly-overlay,
       home-manager,
-      vicinae,
       zen-browser,
       ...
     }@inputs:
@@ -71,7 +70,6 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    vicinae.url = "github:vicinaehq/vicinae";
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
