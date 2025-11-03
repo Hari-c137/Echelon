@@ -39,7 +39,7 @@
     extraGroups = [ "wheel" ];
   };
 
-  #  systemd.user.targets.cosmic-session.enable = false;
+  systemd.user.targets.cosmic-session.enable = false;
   services.displayManager.cosmic-greeter.enable = true;
   services.emacs.enable = true;
 
