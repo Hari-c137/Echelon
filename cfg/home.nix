@@ -20,7 +20,7 @@
     ./kitty.nix
     ./wall.nix
     ./niri.nix
-    ./symlinks.nix
+    ./../symlinks/symlinks.nix
     ./mpv.nix
     ./virtualization.nix
   ];
