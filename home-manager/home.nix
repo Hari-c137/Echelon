@@ -43,8 +43,8 @@
   };
 
   home = {
-    username = "c137";
-    homeDirectory = "/home/c137";
+    username = "x137";
+    homeDirectory = "/home/x137";
   };
 
   # Add stuff for your user as you see fit:

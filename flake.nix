@@ -35,7 +35,7 @@
       };
 
       homeConfigurations = {
-        "c137@skynet" = home-manager.lib.homeManagerConfiguration {
+        "x137@skynet" = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = { inherit inputs outputs; };
           modules = [

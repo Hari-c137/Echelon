@@ -60,7 +60,7 @@
 
   users.mutableUsers = false;
   users.users = {
-    c137 = {
+    x137 = {
       isNormalUser = true;
       openssh.authorizedKeys.keys = [
       ];
