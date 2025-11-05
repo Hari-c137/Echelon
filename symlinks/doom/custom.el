@@ -8,6 +8,7 @@
 (require 'elcord)
 (elcord-mode)
 (global-wakatime-mode)
+(display-time-mode)
 
 (remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-shortmenu)
 (add-hook! '+doom-dashboard-functions :append
