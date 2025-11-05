@@ -27,16 +27,15 @@
 
   users.users.x137 = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "libvirtd" ];
+    extraGroups = [
+      "wheel"
+      "libvirtd"
+    ];
     packages = with pkgs; [
       tree
       vicinae
       simulide
     ];
-  };
-  users.users.c137 = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" ];
   };
 
   systemd.user.targets.cosmic-session.enable = false;
@@ -92,21 +91,21 @@
   environment.systemPackages = with pkgs; [
     (lib.hiPrio pkgs.uutils-coreutils-noprefix) # what could go wrong..?
     wl-clipboard
-    btop
+    btop # remove
     polkit_gnome
-    gcc
-    nautilus
+    gcc # voidbox
+    nautilus # replace-cosmic
     wget
     gnumake
     cmake
-    fuzzel
-    evil-helix
-    unzip
-    rust-analyzer
+    fuzzel # remove
+    evil-helix # default-editor
+    unzip # nonfreerepo
+    rust-analyzer # devshell
     curl
-    heroic
-    pwvucontrol
-    fastfetch
+    heroic # gaming
+    pwvucontrol # audio
+    fastfetch # cli
   ];
 
   system.stateVersion = "25.05";
