@@ -32,8 +32,10 @@
           (
             { pkgs, ... }:
             {
-              environment.systemPackages = [
-                pkgs.rust-bin.stable.latest.default
+              environment.systemPackages = with pkgs; [
+                (rust-bin.stable.latest.default.override {
+                  targets = [ "wasm32-unknown-unknown" ];
+                })
               ];
             }
           )
