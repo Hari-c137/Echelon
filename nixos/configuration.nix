@@ -58,7 +58,7 @@
 
   networking.hostName = "skynet";
 
-  users.mutableUsers = false;
+  users.mutableUsers = true;
   users.users = {
     x137 = {
       isNormalUser = true;
