@@ -10,7 +10,8 @@
   imports = [
     # If you want to use modules your own flake exports (from modules/nixos):
     # outputs.nixosModules.cachyos
-    # outputs.nixosModules.sudo-rs
+    outputs.nixosModules.sudo-rs
+    outputs.nixosModules.cachyos
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd
@@ -19,7 +20,7 @@
     # You can also split up your configuration and import pieces of it here:
     # ./users.nix
 
-    ../modules/nixos
+    #../modules/nixos
     ./hardware-configuration.nix
   ];
 
