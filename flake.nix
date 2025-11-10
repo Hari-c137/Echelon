@@ -12,10 +12,14 @@
       zen-browser,
       ...
     }@inputs:
+    let
+      system = "x86_64-linux";
+    in
     {
       nixosConfigurations.skynet = nixpkgs.lib.nixosSystem {
+        inherit system;
         specialArgs = { inherit inputs; };
-        system = "x86_64-linux";
+        # system = "x86_64-linux";
         modules = [
           (
             { pkgs, libs, ... }:
@@ -48,7 +52,8 @@
               users.x137 = import ./cfg/home.nix;
               extraSpecialArgs = {
                 inherit inputs;
-                system = "x86_64-linux";
+                inherit system;
+                #       system = "x86_64-linux";
               };
             };
           }
