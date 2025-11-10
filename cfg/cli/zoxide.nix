@@ -2,7 +2,7 @@
 
 {
   programs.zoxide = {
-    enable = true;
+    enable = false;
     package = pkgs.zoxide;
     options = [ ];
     enableBashIntegration = true;
