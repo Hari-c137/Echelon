@@ -8,5 +8,9 @@
       epkgs.vterm
     ];
   };
+
+  home.packages = with pkgs; [
+    pandoc
+  ];
   #  services.emacs.enable = true;
 }
