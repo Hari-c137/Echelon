@@ -8,7 +8,6 @@
       gd = "git diff";
       gp = "git push -u origin main";
       x = "exit";
-      v = "nvim";
       mc = "make clean";
       mr = "make release";
       md = "make debug";

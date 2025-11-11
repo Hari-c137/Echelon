@@ -98,7 +98,6 @@
     wget
     gnumake
     cmake
-    jujutsu
     fuzzel # remove
     unzip # nonfreerepo
     curl
