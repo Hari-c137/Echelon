@@ -12,7 +12,6 @@
         nvim-treesitter-with-plugins = pkgs.vimPlugins.nvim-treesitter.withPlugins (
           treesitter-plugins: with treesitter-plugins; [
             bash
-            nu
             c
             lua
             nix
@@ -35,7 +34,6 @@
   };
   home.packages = [
     pkgs.luajit
-    pkgs.nixfmt
     pkgs.tree-sitter
   ];
 }
