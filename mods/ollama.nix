@@ -3,6 +3,10 @@
 {
   services.ollama = {
     enable = true;
-    loadModels = [ "deepseek-r1:7b" ];
+    acceleration = "rocm";
+    loadModels = [
+      "deepseek-r1:7b"
+      "goekdenizguelmez/JOSIEFIED-Qwen3:4b"
+    ];
   };
 }
