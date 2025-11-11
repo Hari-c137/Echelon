@@ -19,6 +19,7 @@
     ./cli/cli.nix
     ./kitty.nix
     ./wall.nix
+    ./quickshell.nix
     ./niri.nix
     ./../symlinks/symlinks.nix
     ./mpv.nix
