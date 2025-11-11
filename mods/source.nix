@@ -7,7 +7,7 @@
     ./performance.nix
     ./qbit.nix
     ./audio.nix
-    ./dev.nix
+    ./formatters.nix
     ./nh.nix
     ./scripts.nix
     ./virtualization.nix
