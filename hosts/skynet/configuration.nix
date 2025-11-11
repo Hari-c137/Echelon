@@ -102,7 +102,6 @@
     fuzzel # remove
     evil-helix # default-editor
     unzip # nonfreerepo
-    rust-analyzer # devshell
     curl
     heroic # gaming
     pwvucontrol # audio
