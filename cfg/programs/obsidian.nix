@@ -2,6 +2,6 @@
 
 {
   programs.obsidian = {
-    enable = true;
+    enable = false;
   };
 }

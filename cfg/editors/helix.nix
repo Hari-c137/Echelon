@@ -2,9 +2,10 @@
 
 {
   programs.helix = {
-    enable = false; # change theme, set line higlight and bracket
+    enable = true;
+    defaultEditor = true;
     settings = {
-      theme = "papercolor-dark";
+      theme = "ayu_dark";
       editor.cursor-shape = {
         normal = "block";
         insert = "bar";

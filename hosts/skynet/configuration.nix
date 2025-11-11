@@ -100,7 +100,6 @@
     cmake
     jujutsu
     fuzzel # remove
-    evil-helix # default-editor
     unzip # nonfreerepo
     curl
     heroic # gaming

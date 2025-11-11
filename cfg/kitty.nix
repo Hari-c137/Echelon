@@ -7,10 +7,10 @@
     themeFile = "ayu";
     settings = {
       shell = "fish";
-      editor = "nvim";
-  #    cursor_trail_decay = "0.1 0.4";
+      editor = "hx";
+      #    cursor_trail_decay = "0.1 0.4";
     };
-        keybindings = {
+    keybindings = {
       "alt+1" = "goto_tab 1";
       "alt+2" = "goto_tab 2";
       "alt+3" = "goto_tab 3";
