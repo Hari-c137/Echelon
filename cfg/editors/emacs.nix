@@ -12,5 +12,5 @@
   home.packages = with pkgs; [
     pandoc
   ];
-  #  services.emacs.enable = true;
+  services.emacs.enable = true;
 }

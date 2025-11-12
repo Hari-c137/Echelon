@@ -95,6 +95,7 @@
     nautilus # replace-cosmic
     wget
     gnumake
+    nvtopPackages.amd
     cmake
     fuzzel # remove
     unzip # nonfreerepo

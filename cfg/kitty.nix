@@ -6,8 +6,8 @@
     package = pkgs.kitty;
     themeFile = "ayu";
     settings = {
-      shell = "fish";
-      editor = "hx";
+      shell = "nu";
+      editor = "emacsclient -nc";
       #    cursor_trail_decay = "0.1 0.4";
     };
     keybindings = {

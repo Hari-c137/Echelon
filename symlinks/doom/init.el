@@ -4,6 +4,7 @@
        company           ; the ultimate code completion backend
        (corfu +orderless)  ; complete with cap(f), cape and a flying feather!
        vertico           ; the search engine of the future
+       ;;ivy
 
        :ui
        doom              ; what makes DOOM look the way it does
