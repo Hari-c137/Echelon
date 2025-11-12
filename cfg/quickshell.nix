@@ -6,5 +6,4 @@
     systemd.enable = true;
     package = pkgs.quickshell;
   };
-
 }

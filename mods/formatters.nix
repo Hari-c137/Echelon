@@ -6,6 +6,11 @@
     stylua
     shfmt
     nixfmt
+    kdePackages.qt5compat
+    kdePackages.qtsvg
+    kdePackages.qtimageformats
+    kdePackages.qtmultimedia
+    kdePackages.qtdeclarative
     rust-analyzer
     wasm-pack
   ];
