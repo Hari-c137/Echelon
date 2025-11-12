@@ -3,7 +3,7 @@
 {
   programs.quickshell = {
     enable = true;
-    systemd = true;
+    systemd.enable = true;
     package = pkgs.quickshell;
   };
 
