@@ -32,8 +32,6 @@
       "libvirtd"
     ];
     packages = with pkgs; [
-      tree
-      vicinae
       simulide
     ];
   };
