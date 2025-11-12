@@ -19,7 +19,6 @@
       nixosConfigurations.skynet = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; };
-        # system = "x86_64-linux";
         modules = [
           (
             { pkgs, libs, ... }:
@@ -27,7 +26,6 @@
               nixpkgs.overlays = [
                 rust-overlay.overlays.default
                 inputs.niri.overlays.niri
-                #     inputs.neovim-nightly-overlay.overlays.default
               ];
             }
           )
@@ -53,7 +51,6 @@
               extraSpecialArgs = {
                 inherit inputs;
                 inherit system;
-                #       system = "x86_64-linux";
               };
             };
           }
