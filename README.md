@@ -6,7 +6,9 @@
 |:----------|:-----------:|
 | wayland_compositor | niri  | 
 | terminal_emulator  | kitty |
-| text_editor        | doomemacs |
+| development_env | doomemacs |
+| text_editor        | helix |
+
 | desktop_shell      | ewwii (W.I.P) | 
 
  
