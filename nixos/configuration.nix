@@ -64,12 +64,9 @@
 
   networking.hostName = "skynet";
 
-  users.mutableUsers = true;
   users.users = {
     x137 = {
       isNormalUser = true;
-      openssh.authorizedKeys.keys = [
-      ];
       extraGroups = [ "wheel" ];
     };
   };
