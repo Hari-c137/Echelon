@@ -6,11 +6,6 @@
     recursive = true;
   };
 
-  xdg.configFile."nvim" = {
-    source = config.lib.file.mkOutOfStoreSymlink "/home/x137/code/echelon/symlinks/nvim/";
-    recursive = true;
-  };
-
   xdg.configFile."doom" = {
     source = config.lib.file.mkOutOfStoreSymlink "/home/x137/code/echelon/symlinks/doom/";
     recursive = true;

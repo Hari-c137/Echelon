@@ -10,6 +10,7 @@
     ./ollama.nix
     ./formatters.nix
     ./nh.nix
+    ./devutils.nix
     ./scripts.nix
     ./virtualization.nix
   ];
