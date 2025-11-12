@@ -9,7 +9,7 @@
 {
   home.username = "x137";
   home.homeDirectory = "/home/x137";
-  home.stateVersion = "25.05"; # should this be equal to system.Sver or unstableV? (need to read the docs more about basic NixOS stuff)
+  home.stateVersion = "25.05";
   programs.home-manager.enable = true;
 
   imports = [
