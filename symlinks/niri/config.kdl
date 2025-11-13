@@ -44,16 +44,13 @@ layout {
     }
 }
 
-layer-rule {
-    match namespace="^wallpaper$"
-    place-within-backdrop true
-}
 
 overview {
     zoom 0.45
 }
 
 spawn-at-startup "swww-daemon"
+spawn-at-startup "noctalia-shell"
 spawn-at-startup "vicinae" "server"
 
 environment {
@@ -97,9 +94,13 @@ animations {
 
 
 window-rule {
-    geometry-corner-radius 0
+   // geometry-corner-radius 0
     clip-to-geometry true
     open-maximized true
+}
+
+debug {
+      honor-xdg-activation-with-invalid-serial
 }
 
 

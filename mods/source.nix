@@ -7,6 +7,7 @@
     ./performance.nix
     ./qbit.nix
     ./audio.nix
+    ./noctalia.nix
     ./ollama.nix
     ./formatters.nix
     ./nh.nix
