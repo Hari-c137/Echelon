@@ -1,3 +1,1 @@
-symlinks/mpv/** linguist-vendored
-symlinks/nvim/** linguist-vendored
-symlinks/doom/** linguist-vendored
+symlinks/** linguist-vendored
