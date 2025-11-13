@@ -16,6 +16,11 @@
     recursive = true;
   };
 
+  xdg.configFile."nvim" = {
+    source = config.lib.file.mkOutOfStoreSymlink "/home/x137/code/echelon/symlinks/nvim/";
+    recursive = true;
+  };
+
   xdg.configFile."mpv" = {
     source = config.lib.file.mkOutOfStoreSymlink "/home/x137/code/echelon/symlinks/mpv/";
     recursive = true;
