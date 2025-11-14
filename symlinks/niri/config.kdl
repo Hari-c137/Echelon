@@ -123,6 +123,8 @@ binds {
     Mod+B           { spawn "noctalia-shell" "ipc" "call" "bar" "toggle"; }
     Mod+Y           { spawn "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
     Mod+Shift+W     { spawn "noctalia-shell" "ipc" "call" "wallpaper" "toggle";  }
+    Mod+Shift+L     { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock";  }
+    Mod+U           { spawn "noctalia-shell" "ipc" "call" "notifications" "toggleHistory";  }
 
     Mod+Return      { spawn "kitty" "--start-as" "fullscreen"; }
     Mod+Shift+B   { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
@@ -150,14 +152,14 @@ binds {
     Mod+Ctrl+Home { move-column-to-first; }
     Mod+Ctrl+End  { move-column-to-last; }
 
-    Mod+Shift+Left  { focus-monitor-left; }
-    Mod+Shift+Down  { focus-monitor-down; }
-    Mod+Shift+Up    { focus-monitor-up; }
-    Mod+Shift+Right { focus-monitor-right; }
-    Mod+Shift+H     { focus-monitor-left; }
-    Mod+Shift+J     { focus-monitor-down; }
-    Mod+Shift+K     { focus-monitor-up; }
-    Mod+Shift+L     { focus-monitor-right; }
+ //   Mod+Shift+Left  { focus-monitor-left; }
+ //   Mod+Shift+Down  { focus-monitor-down; }
+ //   Mod+Shift+Up    { focus-monitor-up; }
+ //   Mod+Shift+Right { focus-monitor-right; }
+ //   Mod+Shift+H     { focus-monitor-left; }
+ //   Mod+Shift+J     { focus-monitor-down; }
+ //   Mod+Shift+K     { focus-monitor-up; }
+ //   Mod+Shift+L     { focus-monitor-right; }
 
     Mod+Shift+Ctrl+Left  { move-column-to-monitor-left; }
     Mod+Shift+Ctrl+Down  { move-column-to-monitor-down; }

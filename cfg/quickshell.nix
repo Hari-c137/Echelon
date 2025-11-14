@@ -7,6 +7,15 @@
   programs.noctalia-shell = {
     enable = true;
     settings = {
+      audio = {
+        cavaFrameRate = 60;
+        mprisBlacklist = [ ];
+        preferredPlayer = "";
+        visualizerQuality = "high";
+        visualizerType = "mirror";
+        volumeOverdrive = true;
+        volumeStep = 5;
+      };
       bar = {
         density = "comfortable";
         position = "left";
@@ -34,7 +43,7 @@
               useFixedWidth = false;
               showAlbumArt = true;
               showVisualizer = true;
-              visualizerType = "linear";
+              visualizerType = "mirror";
             }
           ];
           center = [
