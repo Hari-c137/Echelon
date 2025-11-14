@@ -21,7 +21,7 @@
               id = "SystemMonitor";
               showCpuUsage = true;
               showCpuTemp = false;
-              showMemoryUsage = false;
+              showMemoryUsage = true;
               showMemoryAsPercent = true;
               showNetworkStats = false;
               showDiskUsage = false;

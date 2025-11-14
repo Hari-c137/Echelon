@@ -42,7 +42,7 @@
       tab_bar_min_tabs = 2;
       tab_bar_margin_width = 1.0;
       tab_bar_align = "right";
-      tab_title_template = "{index}: {title}";
+      tab_title_template = "Tab: {index}";
       active_tab_foreground = "#000";
       active_tab_background = "#73D216";
       active_tab_font_style = "bold-itaLic";
