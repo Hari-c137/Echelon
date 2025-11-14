@@ -25,7 +25,6 @@
             {
               nixpkgs.overlays = [
                 rust-overlay.overlays.default
-                inputs.neovim-nightly-overlay.overlays.default
                 inputs.niri.overlays.niri
               ];
             }
