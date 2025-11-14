@@ -92,6 +92,10 @@ animations {
     slowdown 0.7
 }
 
+layer-rule {
+  match namespace="^noctalia-overview*"
+  place-within-backdrop true
+}
 
 window-rule {
    geometry-corner-radius 5

@@ -119,7 +119,7 @@
       };
       wallpaper = {
         enabled = true;
-        overviewEnabled = false;
+        overviewEnabled = true;
         directory = "/home/x137/code/echelon/walls/";
         enableMultiMonitorDirectories = false;
         recursiveSearch = false;
