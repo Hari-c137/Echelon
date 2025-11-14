@@ -1,12 +1,13 @@
 {
   config,
-  lib,
+  inputs,
   pkgs,
   ...
 }:
 
 {
   programs.neovim = {
-    enable = false;
+    enable = true;
+    package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.default;
   };
 }

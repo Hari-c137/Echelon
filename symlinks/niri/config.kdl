@@ -22,7 +22,7 @@ cursor {
 
 layout {
     background-color "transparent"
-    gaps 8
+    gaps 4
     center-focused-column "never"
     preset-column-widths {
         proportion 0.33333
@@ -94,7 +94,7 @@ animations {
 
 
 window-rule {
-   // geometry-corner-radius 0
+   geometry-corner-radius 5
     clip-to-geometry true
     open-maximized true
 }
@@ -116,9 +116,12 @@ binds {
     Mod+D           { spawn "vicinae" "toggle";  }
     Mod+F           { spawn "zen"; }
 
+    Mod+B           { spawn "noctalia-shell" "ipc" "call" "bar" "toggle"; }
+    Mod+Y           { spawn "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
+    Mod+Shift+W     { spawn "noctalia-shell" "ipc" "call" "wallpaper" "toggle";  }
+
     Mod+Return      { spawn "kitty" "--start-as" "fullscreen"; }
     Mod+Shift+B   { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
-    Mod+Shift+W   { spawn "~/.config/niri/scripts/wallset.nu"; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }

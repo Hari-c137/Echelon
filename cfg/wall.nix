@@ -2,7 +2,7 @@
 
 {
   services.swww = {
-    enable = true;
+    enable = false;
     package = pkgs.swww;
   };
 }

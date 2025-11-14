@@ -25,6 +25,7 @@
             {
               nixpkgs.overlays = [
                 rust-overlay.overlays.default
+                inputs.neovim-nightly-overlay.overlays.default
                 inputs.niri.overlays.niri
               ];
             }
@@ -70,7 +71,9 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
+    neovim-nightly-overlay = {
+      url = "github:nix-community/neovim-nightly-overlay";
+    };
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
