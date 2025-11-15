@@ -95,7 +95,7 @@
     btop # remove
     polkit_gnome
     gcc # voidbox
-    nautilus # replace-cosmic
+    nautilus
     wget
     gnumake
     nvtopPackages.amd

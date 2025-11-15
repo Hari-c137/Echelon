@@ -7,7 +7,7 @@
 
 {
   programs.neovim = {
-    enable = true;
+    enable = false;
     package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.default;
   };
 }
