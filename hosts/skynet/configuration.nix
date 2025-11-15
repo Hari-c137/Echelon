@@ -36,7 +36,6 @@
       "libvirtd"
     ];
     packages = with pkgs; [
-      simulide
     ];
   };
 
