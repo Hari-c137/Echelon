@@ -40,9 +40,7 @@
     ];
   };
 
-  #  systemd.user.targets.cosmic-session.enable = false;
   services.displayManager.ly.enable = true;
-  services.emacs.enable = true;
 
   systemd = {
     user.services.polkit-gnome-authentication-agent-1 = {

@@ -1,8 +1,14 @@
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
 
-  boot.kernelPackages = pkgs.linuxPackages_cachyos;
+  #boot.kernelPackages = pkgs.linuxPackages_cachyos;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   hardware.amdgpu.overdrive.enable = true;
   hardware.amdgpu.initrd.enable = true;
 
@@ -11,7 +17,9 @@
     enable32Bit = true;
   };
 
-  services.lact = { enable = true; };
+  services.lact = {
+    enable = true;
+  };
 
   services.ananicy = {
     enable = true;

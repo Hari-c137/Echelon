@@ -3,7 +3,7 @@
 {
   programs.helix = {
     enable = false;
-    defaultEditor = true;
+    defaultEditor = false;
     settings = {
       theme = "ayu_dark";
       editor.cursor-shape = {

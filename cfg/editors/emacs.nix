@@ -13,4 +13,5 @@
     pandoc
   ];
   services.emacs.enable = true;
+  services.emacs.defaultEditor = true;
 }
