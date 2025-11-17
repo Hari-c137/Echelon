@@ -6,7 +6,7 @@
     package = pkgs.kitty;
     themeFile = "ayu";
     settings = {
-      shell = "nu";
+      shell = "fish";
       editor = "emacsclient -nc";
       #    cursor_trail_decay = "0.1 0.4";
     };
