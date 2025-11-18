@@ -96,6 +96,7 @@
     gcc # voidbox
     nautilus
     wget
+    ncdu
     gnumake
     nvtopPackages.amd
     cmake
