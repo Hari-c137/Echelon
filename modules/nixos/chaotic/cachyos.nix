@@ -17,7 +17,7 @@ in
   chaotic.nyx.cache.enable = true;
   imports = [ inputs.chaotic.nixosModules.default ];
 
-  boot.kernelPackages = pkgs.linuxPackages_cachyos;
+  boot.kernelPackages = pkgs.linuxPackages_cachyos-lto;
   #system.modulesTree = [ (lib.getOutput "modules" cachykernel) ];
   services.ananicy = {
     package = pkgs.ananicy-cpp;

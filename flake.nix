@@ -29,7 +29,7 @@
         skynet = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
           modules = [
-            ./nixos/configuration.nix
+            ./hosts/x137-skynet/configuration.nix
           ];
         };
       };
@@ -51,5 +51,6 @@
     home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+    # todo (zen, doomemacs-flake, mangowc, noctalia-shell, vicinae, flake-parts)
   };
 }
