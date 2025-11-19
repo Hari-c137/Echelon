@@ -7,8 +7,8 @@
 
 {
 
-  #boot.kernelPackages = pkgs.linuxPackages_cachyos;
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_cachyos-lto;
+  #boot.kernelPackages = pkgs.linuxPackages_latest;
   hardware.amdgpu.overdrive.enable = true;
   hardware.amdgpu.initrd.enable = true;
 
