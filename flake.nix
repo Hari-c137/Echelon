@@ -8,7 +8,6 @@
       chaotic,
       rust-overlay,
       mango,
-      neovim-nightly-overlay,
       home-manager,
       zen-browser,
       ...
@@ -72,9 +71,6 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-    neovim-nightly-overlay = {
-      url = "github:nix-community/neovim-nightly-overlay";
-    };
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -98,11 +94,6 @@
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
-      #     inputs.quickshell.follows = "quickshell";
     };
-    #   quickshell = {
-    #     url = "github:outfoxxed/quickshell";
-    #     inputs.nixpkgs.follows = "nixpkgs";
-    #   };
   };
 }
