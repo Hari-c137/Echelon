@@ -7,6 +7,7 @@
       nixpkgs,
       chaotic,
       rust-overlay,
+      mango,
       neovim-nightly-overlay,
       home-manager,
       zen-browser,
@@ -31,6 +32,7 @@
           )
           ./hosts/skynet/configuration.nix
           chaotic.nixosModules.default
+          mango.nixosModules.mango
           (
             { pkgs, ... }:
             {
@@ -85,6 +87,10 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    mango = {
+      url = "github:DreamMaoMao/mango";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -92,11 +98,11 @@
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.quickshell.follows = "quickshell";
+      #     inputs.quickshell.follows = "quickshell";
     };
-    quickshell = {
-      url = "github:outfoxxed/quickshell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #   quickshell = {
+    #     url = "github:outfoxxed/quickshell";
+    #     inputs.nixpkgs.follows = "nixpkgs";
+    #   };
   };
 }

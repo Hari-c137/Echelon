@@ -8,6 +8,7 @@
     ./qbit.nix
     ./audio.nix
     ./noctalia.nix
+    ./mangowc.nix
     ./ollama.nix
     ./formatters.nix
     ./nh.nix

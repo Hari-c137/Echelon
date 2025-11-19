@@ -18,6 +18,7 @@
     ./programs/programs.nix
     ./cli/cli.nix
     ./kitty.nix
+    ./mangowc.nix
     ./wall.nix
     ./quickshell.nix
     ./niri.nix
