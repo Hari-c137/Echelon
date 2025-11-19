@@ -21,13 +21,6 @@
       };
     in
     {
-      topology.x86_64-linux = import nix-topology {
-        inherit pkgs;
-        modules = [
-          ./mods/topology.nix
-          { nixosConfigurations = self.nixosConfigurations; }
-        ];
-      };
       nixosConfigurations.skynet = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; };
@@ -80,6 +73,14 @@
           }
         ];
       };
+      topology.x86_64-linux = import nix-topology {
+        inherit pkgs;
+        modules = [
+          ./mods/topology.nix
+          { nixosConfigurations = self.nixosConfigurations; }
+        ];
+      };
+
     };
 
   inputs = {
