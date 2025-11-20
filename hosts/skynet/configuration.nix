@@ -22,7 +22,7 @@
     };
   };
 
-  hardware.bluetooth.enable = true;
+  hardware.bluetooth.enable = false;
   services.tuned.enable = true;
   services.upower.enable = true;
 
